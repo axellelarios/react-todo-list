@@ -108,10 +108,11 @@ button {
    gap: 20px;
 }
 
-.todo-list_wrapper ul li{
+.todo-list_wrapper ul li, .todo-list_wrapper ul li div{
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   gap: 10px;
 }
 

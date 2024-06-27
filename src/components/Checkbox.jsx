@@ -1,12 +1,13 @@
-const Checkbox = ({isChecked, setIsChecked, tab, setTab, handleCheck}) => {
+const Checkbox = ({tab, setTab, handleCheck}) => {
 
     return (
         <>
         {tab.map((element, index) => {
             return <li key={index}>
-              <input type="checkbox" onChange={handleCheck} checked={isChecked}/>
-              <label><span style={{textDecoration: isChecked ? "line-through" : "unset"}}>{element} </span></label>
-              
+            <div>
+              <input type="checkbox" onChange={handleCheck} value={element.title} checked={element.isDone}/>
+              <label><span style={{textDecoration: element.checked ? "line-through" : "unset"}}>{element.title} </span></label>
+            </div> 
             <button onClick={() => {
                 const newArray = [
                   ...tab.slice(0, index), // on garde les elements avant celui à supprimer
