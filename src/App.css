@@ -1,0 +1,148 @@
+body {
+  background: #000000;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font: 20px;
+}
+
+* {
+  font-size: 20px;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+section {
+  padding: 20px 0;
+}
+
+.movies-section {
+  margin-right: -40px;
+}
+
+h1 {
+  font-weight: bolder;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #C8A1D6;
+}
+
+header, main, footer {
+  padding: 40px 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+header .logo {
+  max-width: 120px;
+}
+
+form input, form button {
+  min-height: 45px;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 50px;
+}
+
+form input {
+  background-color: whitesmoke;
+  color: #151515;
+  min-width: 600px;
+  width: 100%;
+  max-width: 674px;
+}
+
+button {
+   background-color: #b6d1cd;
+   color: rgb(24, 22, 22);
+   text-transform: uppercase;
+   font-size: 16px;
+   font-weight: 600;
+}
+
+.card.carroussel {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.todo-list_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list_wrapper form {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+}
+
+.todo-list_wrapper ul {
+   background-color: #151515;
+   max-width: 730px;
+   border-radius: 10px;
+   width: 100%;
+   padding: 20px;
+   list-style: none;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.todo-list_wrapper ul li{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.todo-list_wrapper .todo-list_results {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 730px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media (min-width: 600px) {
+  form input{
+    min-width: 600px;
+  }
+}
+
+@media (max-width: 765px) {
+  .container {
+    padding: 0 10px;
+  }
+  .movies-section {
+    margin-right: -10px;
+  }
+}
